@@ -5,7 +5,7 @@ echo "In this program, you will try to guess the number of"
 echo "files there are in the current directory!"
 
 function ask {
-	echo "Guess/enter the number of files in the current directory:"
+	echo "How many files do you think there are:"
 	read guess
     filenumber=$(ls -l |grep "^-"|wc -l)
 }
